@@ -1,4 +1,6 @@
 # gyazo-expander
+[![Build Status](https://travis-ci.org/uiureo/gyazo-expander.svg?branch=master)](https://travis-ci.org/uiureo/gyazo-expander)
+
 A chrome extension to expand [gyazo](https://gyazo.com) links inline.
 
 https://chrome.google.com/webstore/detail/pclihmojpkhafjnnlmekngigjdccjlmk
