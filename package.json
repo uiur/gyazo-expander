@@ -6,7 +6,8 @@
   "scripts": {
     "test": "standard && ava \"test/**/\"",
     "build": "mkdir -p dist && browserify src/content.js -o dist/content.js",
-    "watch": "mkdir -p dist && watchify src/content.js -o dist/content.js"
+    "watch": "mkdir -p dist && watchify src/content.js -o dist/content.js",
+    "zip": "mkdir -p build && zip build/gyazo-expander.zip manifest.json dist/* images/*"
   },
   "keywords": [],
   "author": "",
