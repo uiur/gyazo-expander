@@ -6,8 +6,9 @@
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "*://github.com/*",
+        "*://*.zendesk.com/*",
+        "*://chatwork.com/*"
       ],
       "js": [
         "dist/content.js"
