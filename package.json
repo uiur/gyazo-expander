@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "standard \"src/**/*.js\" && ava test/setup.js \"test/**/\"",
+    "test": "standard && ava \"test/**/\"",
     "build": "mkdir -p dist && browserify src/content.js -o dist/content.js",
     "watch": "mkdir -p dist && watchify src/content.js -o dist/content.js"
   },
