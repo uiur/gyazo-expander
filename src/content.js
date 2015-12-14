@@ -18,6 +18,6 @@ onNewElement((el) => {
   const hasChildren = el.children.length > 0
   if (isGyazoUrl && !hasChildren) {
     const imageUrl = href + '.png'
-    el.insertAdjacentHTML('afterend', `<p><a href=${ href } target="_blank"><img src=${ imageUrl } style="max-width: 100%;" /></p></a>`)
+    el.insertAdjacentHTML('afterend', `<p><a href=${ href } target="_blank" data-gyazo-id="checked"><img src=${ imageUrl } style="max-width: 100%;" /></p></a>`)
   }
 })
