@@ -14,7 +14,9 @@ function onNewElement (cb) {
 onNewElement((el) => {
   const href = el.getAttribute('href')
 
-  if (gyazoIdFromUrl(href)) {
+  const isGyazoUrl = !!gyazoIdFromUrl(href)
+  const hasChildren = el.children.length > 0
+  if (isGyazoUrl && !hasChildren) {
     const imageUrl = href + '.png'
     el.insertAdjacentHTML('afterend', `<p><img src=${ imageUrl } /></p>`)
   }
