@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "standard \"src/**/*.js\"",
+    "test": "standard \"src/**/*.js\" && ava test/setup.js \"test/**/\"",
     "build": "mkdir -p dist && browserify src/content.js -o dist/content.js",
     "watch": "mkdir -p dist && watchify src/content.js -o dist/content.js"
   },
@@ -12,14 +12,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
-    "babelify": "^7.2.0",
+    "ava": "^0.7.0",
+    "babelify": "^6.4.0",
     "browserify": "^12.0.1",
     "standard": "^5.4.1",
     "watchify": "^3.6.1"
   },
   "browserify": {
-    "transform": ["babelify"]
+    "transform": [
+      "babelify"
+    ]
   }
 }
