@@ -10,7 +10,7 @@ module.exports = function gyazoIdFromUrl (str) {
     return
   }
 
-  if (parsedUrl.host === 'gyazo.com' && (/^\/[0-9a-f]+$/).test(parsedUrl.path)) {
+  if ((/^(.+\.)?gyazo\.com$/).test(parsedUrl.host) && (/^\/[0-9a-f]+$/).test(parsedUrl.path)) {
     return parsedUrl.path.slice(1)
   }
 }
