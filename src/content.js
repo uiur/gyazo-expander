@@ -16,6 +16,6 @@ onNewElement((el) => {
 
   if (gyazoIdFromUrl(href)) {
     const imageUrl = href + '.png'
-    el.insertAdjacentHTML('afterend', `<img src=${ imageUrl } />`)
+    el.insertAdjacentHTML('afterend', `<p><img src=${ imageUrl } /></p>`)
   }
 })
