@@ -1,0 +1,19 @@
+{
+  "name": "gyazo-expander",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "dist/content.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ]
+}

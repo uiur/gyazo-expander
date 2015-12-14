@@ -1,0 +1,25 @@
+{
+  "name": "gyazo-expander",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "standard \"src/**/*.js\"",
+    "build": "mkdir -p dist && browserify src/content.js -o dist/content.js",
+    "watch": "mkdir -p dist && watchify src/content.js -o dist/content.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "standard": "^5.4.1",
+    "watchify": "^3.6.1"
+  },
+  "browserify": {
+    "transform": ["babelify"]
+  }
+}
